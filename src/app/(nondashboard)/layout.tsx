@@ -1,5 +1,7 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
+import "../globals.css";
+
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
