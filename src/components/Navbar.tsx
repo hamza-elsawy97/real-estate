@@ -1,6 +1,7 @@
 import { NAVBAR_HEIGHT } from '@/lib/constants';
 import React from 'react';
 import Link from 'next/link';
+import { Button } from './ui/button';
 
 
 const Navbar = () => {
@@ -16,6 +17,21 @@ const Navbar = () => {
                 <span className="text-secondary-500 font-light hover:!text-primary-300">Template</span>
               </div>
             </div>
+          </Link>
+        </div>
+        <p className="text-primary-200 hidden md:block">
+          A Next.js 14 template with Tailwind CSS, TypeScript, and more!
+        </p>
+        <div className="flex items-center gap-5">
+          <Link href="/signin">
+          <Button variant="outline" className="text-white border-white bg-transparent hover:bg-white hover:text-primary-700 rounded-lg" >
+            Sign In
+          </Button>
+          </Link>
+          <Link href="/signup">
+          <Button variant="secondary" className="text-white border-white bg-secondary-600 hover:bg-white hover:text-primary-700 rounded-lg" >
+            Sign Up
+          </Button>
           </Link>
         </div>
       </div>
