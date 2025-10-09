@@ -87,7 +87,7 @@ const DiscoverCard = ({
     <div className="bg-primary-700 p-[0.6rem] rounded-full mb-4 h-10 w-10 mx-auto">
       <Image
         src={imageSrc}
-        width={30}
+        width={30} 
         height={30}
         className="w-full h-full"
         alt={title}
